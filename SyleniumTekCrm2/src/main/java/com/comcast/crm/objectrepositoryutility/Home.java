@@ -32,7 +32,12 @@ private	WebElement orglink;
 	private	WebElement campaignlink;
 	@FindBy(linkText = "More")
 	private	WebElement morelink;
-	
+	@FindBy(linkText="products")
+private WebElement productlink;	
+	public WebElement getProductlink() {
+		return productlink;
+	}
+
 	public void naviagteToCampaignlink()
 	{Actions acts= new Actions(driver);
 	acts.moveToElement(morelink).perform();
